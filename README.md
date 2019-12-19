@@ -1,7 +1,10 @@
-![](/Screenshots/SpotifyLyricsNET-logo-v1.png)
-# Spotify Lyrics .NET
+#### About this fork
+I just lazily replaced the Spotify process references with TIDAL and it works perfectly. Didn't even bother to remove text references to Spotify. Working branch is alpha WPF plus the helper (needs to be recompiled and copied to the resources folder).
+
+![](https://i.ya-webdesign.com/images/tidal-logo-png-4.png)
+# TIDAL Lyrics .NET
 ![](https://img.shields.io/badge/Build-Passing-success.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(WPF)-v1.5.2-red.svg?style=flat) ![](https://img.shields.io/badge/Current_Version_(UWP)-v1.5.2-green.svg?style=flat)
-> Get the lyrics of the song you're listening to on Spotify
+> Get the lyrics of the song you're listening to on Tidal
 
 ![](/Screenshots/SpotifyLyricsNET-v1.5.0.png)
 
