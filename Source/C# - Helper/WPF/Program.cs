@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -84,13 +84,13 @@ namespace Spotify_Lyrics.NET_Helper_UWP
         {
             if (!isSpotifyOpened)
             {
-                if (isFlagPresent() && isProcessPresent("Spotify"))
+                if (isFlagPresent() && isProcessPresent("TIDAL"))
                 {
                     if (!isProcessPresent(appName)) launchSpotifyLyricsNET();
                     isSpotifyOpened = true;
                 }
             }
-            else if (!isProcessPresent("Spotify"))
+            else if (!isProcessPresent("TIDAL"))
             {
                 isSpotifyOpened = false;
             }
