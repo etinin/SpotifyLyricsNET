@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -342,19 +342,19 @@ namespace Spotify_Lyrics.NET
 
         private void timerTitle_Tick(object sender, EventArgs e)
         {
-            Process[] spotifyProcess = Process.GetProcessesByName("Spotify");
+            Process[] spotifyProcess = Process.GetProcessesByName("TIDAL");
 
             foreach (Process p in spotifyProcess)
             {
                 string songTitle = p.MainWindowTitle;
-                if (songTitle != "" && songTitle != "Spotify" && songTitle != currentSongTitle)
+                if (songTitle != "" && songTitle != "TIDAL" && songTitle != currentSongTitle)
                     setSong(songTitle);
             }
         }
 
         private async void setSong(string title, bool bypass = false)
         {
-            if ((!title.Contains("Spotify") && title != currentSongTitle) || (bypass))
+            if ((!title.Contains("TIDAL") && title != currentSongTitle) || (bypass))
             {
                 currentSongTitle = title;
 
