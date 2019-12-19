@@ -360,8 +360,8 @@ namespace Spotify_Lyrics.NET
 
                 if (title.Contains(" - "))
                 {
-                    string artist = title.Substring(0, title.IndexOf(" -"));
-                    string songTitle = title.Replace(artist + " - ", "");
+                    string songTitle = title.Substring(0, title.IndexOf(" -"));
+                    string artist = title.Replace(songTitle + " - ", "");
 
                     isMarked = false;
                     correctMarkDescription.Visibility = Visibility.Collapsed;
